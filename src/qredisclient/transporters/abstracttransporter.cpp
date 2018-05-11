@@ -323,8 +323,8 @@ void RedisClient::AbstractTransporter::runCommand(const RedisClient::Command &co
         return;
     }
 
-    qDebug() << "Run command:" << command.getRawString() << " in db "
-             << m_connection->m_dbNumber << " with timeout " << m_connection->getConfig().executeTimeout();
+    //qDebug() << "Run command:" << command.getRawString() << " in db "
+    //         << m_connection->m_dbNumber << " with timeout " << m_connection->getConfig().executeTimeout();
 
     emit logEvent(QString("%1 > [runCommand] %2")
                   .arg(m_connection->getConfig().name())

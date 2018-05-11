@@ -415,11 +415,11 @@ void RedisClient::Connection::getNamespaceItems(RedisClient::Connection::Namespa
 void RedisClient::Connection::createTransporter()
 {
     //todo : implement unix socket transporter
-    if (m_config.useSshTunnel()) {
-       m_transporter = QSharedPointer<AbstractTransporter>(new SshTransporter(this));
-    } else {
+//    if (m_config.useSshTunnel()) {
+//       m_transporter = QSharedPointer<AbstractTransporter>(new SshTransporter(this));
+//    } else {
        m_transporter = QSharedPointer<AbstractTransporter>(new DefaultTransporter(this));
-    }
+//    }
 }
 
 bool RedisClient::Connection::isTransporterRunning()

@@ -37,7 +37,7 @@ private slots:
     void sslError(const QList<QSslError> &errors);
 
 private:
-    QSharedPointer<QSslSocket> m_socket;
+    QSharedPointer<QTcpSocket> m_socket;
     QMutex m_disconnectLock;
     bool m_errorOccurred;
 };
