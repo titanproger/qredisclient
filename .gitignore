@@ -12,3 +12,5 @@ tests/functional/*.json
 tests/functional/*.data
 tests/functional/bin/*
 *Redis-64*
+
+.idea
