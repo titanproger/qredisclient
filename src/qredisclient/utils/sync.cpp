@@ -2,7 +2,7 @@
 #include "qredisclient/command.h"
 
 RedisClient::SignalWaiter::SignalWaiter(uint timeout)
-    : m_result(false), m_resultReceived(false)
+    : m_resultReceived(false), m_result(false)
 {
     m_timeoutTimer.setSingleShot(true);
     m_timeoutTimer.setInterval(timeout);
